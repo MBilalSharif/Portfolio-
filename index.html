@@ -601,6 +601,44 @@ section { padding: 7rem 2rem; max-width: 1100px; margin: 0 auto; }
 .vibe-desc { font-size: 0.86rem; color: var(--text-dim); line-height: 1.65; margin-bottom: 1.25rem; }
 .vibe-card .tech-badge { background: rgba(156,107,255,0.06); border-color: rgba(156,107,255,0.15); color: rgba(156,107,255,0.8); }
 
+/* Live Website Button */
+.vibe-card-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+.vibe-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  border: 1px solid rgba(156,107,255,0.35);
+  color: var(--violet);
+  background: rgba(156,107,255,0.07);
+  cursor: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+.vibe-live-btn .live-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--violet);
+  box-shadow: 0 0 6px var(--violet);
+  animation: pulse 2s ease infinite;
+  flex-shrink: 0;
+}
+.vibe-live-btn:hover {
+  background: rgba(156,107,255,0.18);
+  border-color: var(--violet);
+  box-shadow: 0 0 22px rgba(156,107,255,0.3);
+  color: #c49fff;
+  transform: translateY(-2px);
+}
+
 /* ============================================
    TESTIMONIALS
    ============================================ */
@@ -827,24 +865,33 @@ Logistic Regression, and Random Forest algorithms with Python and scikit-learn</
       <span class="vibe-icon">✂️</span>
       <h3 class="vibe-title">BladeFind | Find the best Barber near you.</h3>
       <p class="vibe-desc">A mobile-first web application that helps users discover the best local barbershop based on ratings, proximity, and availability.</p>
-      <div class="tech-badges">
-        <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span><span class="tech-badge">React</span><span class="tech-badge">GoogleApi</span>
+      <div class="vibe-card-footer">
+        <div class="tech-badges">
+          <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span><span class="tech-badge">React</span><span class="tech-badge">GoogleApi</span>
+        </div>
+        <a href="https://blade-find-git-main-m-bilals-projects-84ff65a9.vercel.app/" class="vibe-live-btn" target="_blank"><span class="live-dot"></span>Live Website ↗</a>
       </div>
     </div>
     <div class="vibe-card reveal reveal-delay-1">
       <span class="vibe-icon">🏠 </span>
       <h3 class="vibe-title">RentLyst | Find the Property You Want</h3>
       <p class="vibe-desc">A property search platform that helps users match with rental properties based on preferences, location, and budget. Landlord Dashboard for managing listings and tenant interactions.</p>
-      <div class="tech-badges">
-        <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span><span class="tech-badge">React</span>
+      <div class="vibe-card-footer">
+        <div class="tech-badges">
+          <span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span><span class="tech-badge">React</span>
+        </div>
+        <a href="https://rent-lyst-frontend.vercel.app/" class="vibe-live-btn" target="_blank"><span class="live-dot"></span>Live Website ↗</a>
       </div>
     </div>
     <div class="vibe-card reveal reveal-delay-2">
       <span class="vibe-icon">🤖</span>
       <h3 class="vibe-title">Niguara | A gamming platform for GenZ</h3>
       <p class="vibe-desc">An interactive gaming platform for GenZ that provides the insights of gaming world, with product browsing and Event updates.</p>
-      <div class="tech-badges">
-        <span class="tech-badge">React</span><span class="tech-badge">Tailwind CSS</span>
+      <div class="vibe-card-footer">
+        <div class="tech-badges">
+          <span class="tech-badge">React</span><span class="tech-badge">Tailwind CSS</span>
+        </div>
+        <a href="https://niguara.vercel.app/" class="vibe-live-btn" target="_blank"><span class="live-dot"></span>Live Website ↗</a>
       </div>
     </div>
   </div>
